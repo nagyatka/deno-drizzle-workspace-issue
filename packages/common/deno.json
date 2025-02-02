@@ -1,0 +1,8 @@
+{
+  "name": "@my-project/common",
+  "version": "0.0.0",
+  "exports": "./src/index.ts",
+  "imports": {
+    "nanoid": "npm:nanoid@^5.0.9"
+  }
+}

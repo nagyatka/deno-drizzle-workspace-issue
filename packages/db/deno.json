@@ -1,0 +1,14 @@
+{
+  "name": "@my-project/db",
+  "version": "0.0.0",
+  "exports": "./src/schema.ts",
+  "tasks": {
+    "migrate": "deno -A --node-modules-dir npm:drizzle-kit generate"
+  },
+  "imports": {
+    "@types/pg": "npm:@types/pg@^8.11.11",
+    "drizzle-kit": "npm:drizzle-kit@^0.30.4",
+    "drizzle-orm": "npm:drizzle-orm@^0.39.1",
+    "pg": "npm:pg@^8.13.1"
+  }
+}

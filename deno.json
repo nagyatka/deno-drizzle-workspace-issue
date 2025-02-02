@@ -1,0 +1,19 @@
+{
+  "workspace": [
+    "./packages/db",
+    "./packages/common"
+  ],
+  "tasks": {
+    "db:migrate": "cd packages/db && deno task migrate"
+  },
+  "fmt": {
+    "semiColons": false
+  },
+  "unstable": ["sloppy-imports"],
+  "nodeModulesDir": "auto",
+  "lint": {
+    "rules": {
+      "exclude": ["no-sloppy-imports", "no-slow-types"]
+    }
+  }
+}
